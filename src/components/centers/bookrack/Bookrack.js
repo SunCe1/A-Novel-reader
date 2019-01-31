@@ -22,7 +22,7 @@ class Bookrack extends React.Component {
                     {
                         bookCoverList.map((book,index)=>{
                             return (
-                                <li onClick={()=>this.inToBook(book.readTo)}>
+                                <li key={index} onClick={()=>this.inToBook(book.readTo)}>
                                     <img src={book.coverImg} className={'coverImg'} alt="封面图片"/>
                                     <span className={'ocverText'}>
                                         <span>{book.bookName}</span>
